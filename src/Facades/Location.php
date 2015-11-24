@@ -8,5 +8,5 @@ class Loaction extends Facade {
    *
    * @return string
    */
-  protected static function getFacadeAccessor() { return 'Mabna\Location\Location'; }
+  protected static function getFacadeAccessor() { return 'geo\src\Location'; }
 }

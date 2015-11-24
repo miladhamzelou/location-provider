@@ -6,11 +6,9 @@
  * Time: 4:03 PM
  */
 
-namespace Mabna\Location;
+namespace geo\src;
 
 
-use geo\src\LocatorManager;
-use geo\src\Type;
 
 class Location
 {
@@ -19,7 +17,7 @@ class Location
 
     public function __construct()
     {
-        $this->db = new \geo\src\db();
+        $this->db = new db();
         $this->db->prepareDatabase();
     }
 

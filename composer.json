@@ -1,5 +1,5 @@
 {
-    "name": "mabna/location",
+    "name": "milad/locationServiceProvider",
     "require": {
         "phayes/geophp": "^1.2",
         "illuminate/database": "^5.1",
