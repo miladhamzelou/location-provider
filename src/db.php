@@ -7,7 +7,7 @@
  */
 
 namespace Mabna\Location;
-
+use Illuminate\Database\Capsule\Manager as Capsule;
 
  class db
 {
