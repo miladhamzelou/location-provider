@@ -25,10 +25,11 @@ class Location
 
     public function searchAddress($key)
     {
+
         header('Access-Control-Allow-Origin: *');
         $key = str_replace(' ','%',$key);
 
-        $locator = new LocatorManager('App\Http\Models\location');
+        $locator = new LocatorManager('\Mabna\Location\model\location');
         return response()->json($locator->findAddress($key));
     }
 
@@ -39,7 +40,7 @@ class Location
 //        $db =new \geo\src\db();
 //        $db->prepareDatabase();
 
-        $locator = new LocatorManager('App\Http\Models\info');
+        $locator = new LocatorManager('\Mabna\Location\model\info');
 
         $point = new Point();
         $point->setLattitude($lat);
