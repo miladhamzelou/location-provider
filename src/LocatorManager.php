@@ -7,6 +7,8 @@ namespace Mabna\Location;
 use geoPHP;
 use League\Geotools\Coordinate\Coordinate;
 use League\Geotools\Polygon\Polygon;
+use Mabna\Location\interfaces\Locator;
+use Mabna\Location\model\Point;
 use Mabna\Location\repository\ModelRepository;
 use RecursiveArrayIterator;
 use RecursiveIteratorIterator;

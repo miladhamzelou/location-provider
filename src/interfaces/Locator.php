@@ -1,8 +1,8 @@
 <?php
 namespace Mabna\Location\interfaces;
 
-use geo\src\model\Point;
-use geo\src\Type;
+use Mabna\Location\model\Point;
+
 
 interface Locator
 {
