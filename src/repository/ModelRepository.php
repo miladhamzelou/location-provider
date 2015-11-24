@@ -6,7 +6,7 @@
  * Time: 9:11 AM
  */
 
-namespace geo\src\repository;
+namespace Mabna\Location\repository;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 

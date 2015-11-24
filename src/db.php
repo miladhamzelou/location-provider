@@ -6,7 +6,7 @@
  * Time: 3:31 PM
  */
 
-namespace geo\src;
+namespace Mabna\Location;
 
 
  use Illuminate\Database\Capsule\Manager as Capsule;

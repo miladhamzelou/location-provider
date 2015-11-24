@@ -6,7 +6,7 @@
  * Time: 9:44 AM
  */
 
-namespace geo\src;
+namespace Mabna\Location;
 
 
 use Illuminate\Support\ServiceProvider;

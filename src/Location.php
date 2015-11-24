@@ -6,7 +6,7 @@
  * Time: 4:03 PM
  */
 
-namespace geo\src;
+namespace Mabna\Location;
 
 
 

@@ -6,7 +6,7 @@
  * Time: 3:42 PM
  */
 
-namespace geo\src\model;
+namespace Mabna\Location\model;
 
 
 use Illuminate\Database\Eloquent\Model;

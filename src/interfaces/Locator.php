@@ -1,5 +1,5 @@
 <?php
-namespace geo\src\interfaces;
+namespace Mabna\Location\interfaces;
 
 use geo\src\model\Point;
 use geo\src\Type;

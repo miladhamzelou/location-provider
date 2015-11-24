@@ -6,7 +6,7 @@
  * Time: 12:41 PM
  */
 
-namespace geo\src\model;
+namespace Mabna\Location\model;
 
 
 class Point

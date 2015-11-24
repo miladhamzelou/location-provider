@@ -1,12 +1,13 @@
 <?php
 
-namespace geo\src;
+namespace Mabna\Location;
 
 
-use geo\src\interfaces\Locator;
-use geo\src\model\Point;
-use geo\src\repository\ModelRepository;
+
 use geoPHP;
+use League\Geotools\Coordinate\Coordinate;
+use League\Geotools\Polygon\Polygon;
+use Mabna\Location\repository\ModelRepository;
 use RecursiveArrayIterator;
 use RecursiveIteratorIterator;
 
@@ -100,8 +101,8 @@ class LocatorManager implements Locator
                             $multipoint_points = $multipoint->getComponents();
                             $json = $multipoint_points[0]->out('json');
                             $json = json_decode($json);
-                            $polygon = new \League\Geotools\Polygon\Polygon(($json->coordinates));
-                            if ($polygon->pointInPolygon(new \League\Geotools\Coordinate\Coordinate([$point->getLangtiude(), $point->getLattitude()])))
+                            $polygon = new Polygon(($json->coordinates));
+                            if ($polygon->pointInPolygon(new Coordinate([$point->getLangtiude(), $point->getLattitude()])))
                                 return array("region" => $region);
                         }
                         else
@@ -111,7 +112,6 @@ class LocatorManager implements Locator
             }
         }
     }
-
 
     public function getPolygonGeoJson($region, $section)
     {
