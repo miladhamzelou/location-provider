@@ -7,9 +7,12 @@
  */
 
 namespace Mabna\Location;
+use Illuminate\Container\Container;
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Support\Facades\Config;
 
- class db
+class db
 {
     public static function prepareDatabase()
     {
@@ -28,7 +31,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
             'collation' => Config::get('database.connections.mysql.collation'),
             'prefix'    => Config::get('database.connections.mysql.prefix')]);
 
-        $capsule->setEventDispatcher(new Dispatcher(new Container));
+        $capsule->setEventDispatcher(new Dispatcher(new Container()));
         $capsule->setAsGlobal();
         $capsule->bootEloquent();
     }
