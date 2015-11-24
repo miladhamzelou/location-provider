@@ -1,16 +1,15 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: milad
+ * User: masoud
  * Date: 11/1/15
  * Time: 9:11 AM
  */
 
-namespace Mabna\Location\repository;
+namespace Mabna\Location\Repository;
 
-use Prettus\Repository\Eloquent\BaseRepository;
 
-class ModelRepository extends BaseRepository
+class ModelRepository extends Repository
 {
 
     public $model;
