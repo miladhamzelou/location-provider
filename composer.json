@@ -17,7 +17,7 @@
 	"autoload": 
 	{
  		"psr-4": {
-            "Mabna\\": "."
+            "Mabna\\Location\\": "src/"
         }
 	},
     "version": "1.0.0"
