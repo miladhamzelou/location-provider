@@ -6,7 +6,7 @@
  * Time: 11:41 AM
  */
 
-namespace Mabna\Location\Repository;
+namespace Mabna\Location\repository;
 
 
 

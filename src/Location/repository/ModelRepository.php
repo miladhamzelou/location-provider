@@ -6,7 +6,7 @@
  * Time: 9:11 AM
  */
 
-namespace Mabna\Location\Repository;
+namespace Mabna\Location\repository;
 
 
 class ModelRepository extends Repository

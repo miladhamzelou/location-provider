@@ -6,7 +6,7 @@
  * Time: 11:42 AM
  */
 
-namespace Mabna\Location\Repository;
+namespace Mabna\Location\repository;
 
 
 interface RepositoryInteface
