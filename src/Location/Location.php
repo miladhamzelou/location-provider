@@ -22,23 +22,16 @@ class Location
     }
 
 
-
     public function searchAddress($key)
     {
-
-        header('Access-Control-Allow-Origin: *');
         $key = str_replace(' ','%',$key);
 
         $locator = new LocatorManager('\Mabna\Location\model\location');
-        return response()->json($locator->findAddress($key));
+        return $locator->findAddress($key);
     }
 
     public function nearest($lat,$long)
     {
-        header('Access-Control-Allow-Origin: *');
-
-//        $db =new \geo\src\db();
-//        $db->prepareDatabase();
 
         $locator = new LocatorManager('\Mabna\Location\model\info');
 
@@ -47,19 +40,13 @@ class Location
         $point->setLangtiude($long);
         $point->setTitle('user');
         $result = $locator->nearest($point,Type::restaurant,500);
-        return  response()->json ($result);
-
+        return $result;
     }
 
     public function findRestaurants($id)
     {
-        header('Access-Control-Allow-Origin: *');
-
-//        $db =new \geo\src\db();
-//        $db->prepareDatabase();
-
         $locator = new LocatorManager('App\Http\Models\info');
-        return response()->json($locator->getList(strtoupper( Type::restaurant),$id));
+        return $locator->getList(strtoupper( Type::restaurant),$id);
     }
 
 }
