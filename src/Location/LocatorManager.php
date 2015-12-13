@@ -9,7 +9,7 @@ use League\Geotools\Coordinate\Coordinate;
 use League\Geotools\Polygon\Polygon;
 use Mabna\Location\interfaces\Locator;
 use Mabna\Location\model\Point;
-use Mabna\Location\Repository\ModelRepository;
+use Mabna\Location\repository\ModelRepository;
 use RecursiveArrayIterator;
 use RecursiveIteratorIterator;
 
